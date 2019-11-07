@@ -5,11 +5,13 @@ class ColorBox extends React.Component {
         super(props);
         this.state = {
             color: this.generateHex()
-        }
+        };
     }
 
     generateHex() {
-        return '#'+Math.floor(Math.random()*16777215).toString(16)
+        const color = '#'+Math.floor(Math.random()*16777215).toString(16);
+        this.props.receiveAnswer(color);
+        return color;
     }
 
     render() {
