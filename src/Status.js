@@ -4,7 +4,7 @@ class Status extends React.Component {
     render() {
       return (
         <div id="title">
-            Hellooo
+            Guess the color!
         </div>
       );  
     }
